@@ -1,0 +1,13 @@
+<div class="top-bar">
+    <h1>Expense Tracker!</h1>
+</div>
+<div class="total">
+    <h1>Total Amount <span class="h">${{totalBudget}}</span></h1>
+</div>
+
+<div class="add">
+    <div>
+        <app-budget-item-list (delete)="deleteItem($event)" [budgetItem]="budgetItem" ></app-budget-item-list>
+    </div>
+</div>
+<app-add-item-form (formSubmit)="addItem($event)"></app-add-item-form>

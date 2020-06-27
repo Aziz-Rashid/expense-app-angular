@@ -1,0 +1,32 @@
+.root{
+    display: flex;
+    width: 100%;
+}
+.budget-item{
+    margin-top: 50px;
+    display: flex;
+   justify-content: space-evenly;
+   width: 100%;
+}
+.description{
+    flex-grow: 1;
+    font-size: 18px;
+    margin-left: 5px;
+}
+.amount{
+    padding: 5px;
+}
+.income{
+    color: green;
+}
+.btn{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+    padding-bottom: 2px;
+    /* background-color: red; */
+    border: none;
+    outline: none;
+    width: 40px;
+}
