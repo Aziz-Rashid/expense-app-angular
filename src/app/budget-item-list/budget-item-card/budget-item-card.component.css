@@ -31,8 +31,11 @@
     border: none;
     outline: none;
     border-radius: 5px;
-    background-color: #00000036;
     height: 30px;
     width: auto;
     font-size: 18px;
+}
+.font-color{
+    color: red;
+    font-size: 25px;
 }
