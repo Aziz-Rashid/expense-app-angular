@@ -33,5 +33,6 @@
     border-radius: 5px;
     background-color: #00000036;
     height: 30px;
+    width: auto;
     font-size: 18px;
 }
