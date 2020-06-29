@@ -1,14 +1,22 @@
+<!-- Transaction History -->
+
 <div class="root">
     <div class="budget-item ">
         <div class="description">
-            
+            <!-- Transaction Discriptions -->
             <p>{{item.description}}</p>
         </div>
+
+
+        <!-- Transactions amount -->
         <div class="amount">
-            <p>{{item.amount}}</p>
+            <p>{{item.amount | currency:'USD'}}</p>
         </div>
+
+
+        <!-- Transaction Delete Button -->
         <div>
-            <button c (click)="onXButtonClick()"><span class="btn">Delete</span></button>
+            <button class="btn-transaction" (click)="onXButtonClick()"><span>Delete</span></button>
         </div>
     </div>
 </div>

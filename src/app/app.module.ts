@@ -9,6 +9,7 @@ import { BudgetItemListComponent } from './budget-item-list/budget-item-list.com
 import { BudgetItemCardComponent } from './budget-item-list/budget-item-card/budget-item-card.component';
 
 @NgModule({
+  // all component here import and show in the browser
   declarations: [
     AppComponent,
     MainPageComponent,
@@ -17,6 +18,7 @@ import { BudgetItemCardComponent } from './budget-item-list/budget-item-card/bud
     BudgetItemCardComponent
   ],
   imports: [
+    // All module import here
     BrowserModule,
     AppRoutingModule,
     FormsModule

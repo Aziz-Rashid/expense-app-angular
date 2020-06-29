@@ -1,20 +1,21 @@
+<!-- Form validation  -->
 <form #itemForm="ngForm" (ngSubmit)="onSubmit(itemForm)">
-
-    <div class="field is-horizontal">
-        <div class="field-body">
-            <div ckass="field">
-                <p class="control">
-                    <input class="input" required name="description" type="text" placeholder="text"  [ngModel]="item.description"/>
-                </p>
-            </div>
-            <div ckass="field">
-                <p class="control">
-                    <input class="input" required name="amount" type="number" placeholder="Amount"  [ngModel]="item.amount"/>
-                </p>
-            </div>
-            <div class="field">
-                <button type="submit" value="Add"  class="j">Add Transactions</button>
-            </div>
-        </div>
+    <div>
+        <!-- first form for transaction description -->
+        <p>
+            <input class="inputfield" required name="description" type="text" placeholder="text"
+                [ngModel]="item.description" />
+        </p>
+    </div>
+    <div>
+        <p>
+            <!-- second form for transaction amount plus or minus -->
+            <input class="inputfield" required name="amount" type="number" placeholder="Amount"
+                [ngModel]="item.amount" />
+        </p>
+    </div>
+    <div>
+        <!-- button for submited form and check if form is valid then button works otherwise its disabled -->
+        <button type="submit" value="Add" [disabled]="itemForm.invalid" class="btn">Add Transactions</button>
     </div>
 </form>

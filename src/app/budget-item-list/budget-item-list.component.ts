@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { BudgetItem } from 'src/shared/module/budget-item';
+import {BudgetItem} from '../../shared/module/budget-item'
 
 @Component({
   selector: 'app-budget-item-list',
@@ -13,6 +13,7 @@ export class BudgetItemListComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  // Delete transaction function 
   onDelete(item: BudgetItem){
     this.delete.emit(item)
   }

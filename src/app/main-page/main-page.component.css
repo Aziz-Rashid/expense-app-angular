@@ -1,12 +1,13 @@
 .top-bar{
     width: 100%;
     text-align: center;
+    margin-top: 20px;
 }
 .top-bar > h1{
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 100;
-    border-bottom: 3px solid black;
-    width: 100%;
+    border-bottom: 3px solid whitesmoke;
+    width: 50%;
     margin: auto;
 }
 .total{
@@ -15,15 +16,12 @@
     margin-top: 50px;
 }
 .total h1{
-    color: green;
+    color: white;
     text-shadow: 2px 2px 2px black;
-    font-size: 45px;
+    font-size: 40px;
 }
 .add{
     display: flex;
     justify-content: center;
     margin-top: 20px;
-}
-.h{
-    font-size: 50px;
 }

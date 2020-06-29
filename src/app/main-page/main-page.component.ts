@@ -13,10 +13,14 @@ totalBudget: number = 0
 
   ngOnInit(): void {
   }
+  // Add Transaction in the history
   addItem(newItem: BudgetItem){
     this.budgetItem.push(newItem)
     this.totalBudget += newItem.amount
   }
+
+  // Deleted item in the array using splice method 
+  
   deleteItem(item: BudgetItem){
     let index = this.budgetItem.indexOf(item)
     this.budgetItem.splice(index,1)

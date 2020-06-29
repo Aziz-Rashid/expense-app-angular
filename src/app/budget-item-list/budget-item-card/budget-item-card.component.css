@@ -1,32 +1,37 @@
 .root{
-    display: flex;
-    width: 100%;
+    /* display: flex; */
+    width: 50%;
+    margin: auto;
 }
 .budget-item{
     margin-top: 50px;
     display: flex;
-   justify-content: space-evenly;
+   justify-content: space-around;
    width: 100%;
 }
 .description{
     flex-grow: 1;
-    font-size: 18px;
+    font-size: 25px;
     margin-left: 5px;
 }
 .amount{
     padding: 5px;
 }
-.income{
-    color: green;
+.amount > p{
+    font-size: 25px;
+    font-weight: bold;
 }
-.btn{
+.btn-transaction{
+    width: 50%;
     text-align: center;
     justify-content: center;
     align-items: center;
     margin-top: 2px;
     padding-bottom: 2px;
-    /* background-color: red; */
     border: none;
     outline: none;
-    width: 40px;
+    border-radius: 5px;
+    background-color: #00000036;
+    height: 30px;
+    font-size: 18px;
 }
